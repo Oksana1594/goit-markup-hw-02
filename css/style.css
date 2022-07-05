@@ -1,3 +1,107 @@
+/* колір основного тексту #212121 */
+/* колір другорядного тексту #757575 */
+/* колір текста Герой #FFFFFF */
+/* кольори лого #000000 #2196F3 */
+/* колір фону тіла  #ffffff*/
+/* колір фону секції наша команда  #F5F4FA */
+/* колір фону футера та героя #2F303A */
+/* колір акцентного тексту #2196F3 */
+
+/* стилі для index.html */
+
 body {
   background-color: #ffffff;
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* logo */
+
+.logo,
+.logo-studio {
+  font-family: Raleway, sans-serif;
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-black {
+  color: #000000;
+}
+
+.logo-white {
+  color: #ffffff;
+}
+
+/* site-nav */
+.site-nav a {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
+}
+
+/* contact-info */
+.contact-info a {
+  color: #757575;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  color: #2196f3;
+}
+
+/* hero-title */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* button */
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+  border: none;
+  font-family: inherit;
+}
+
+.button .primary {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* section-title */
+
+/* text */
+
+/* address */
+.address {
 }
