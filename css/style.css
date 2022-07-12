@@ -9,6 +9,7 @@
 
 /* стилі для index.html */
 
+/* Змінні */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -17,6 +18,7 @@
   --contrasting-color: #ffffff;
 }
 
+/* Боді */
 body {
   background-color: var(--contrasting-color);
   color: var(--primary-text-color);
@@ -26,7 +28,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* logo for all pages*/
+/* =====================Загальні стилі=============== */
+
+/* ==================Навігація===================== */
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -45,26 +49,28 @@ body {
   color: var(--contrasting-color);
 }
 
-/* site-nav for all pages*/
-.site-nav a {
-  color: var(--title-text-color);
+.site-nav.link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
+.link {
+  color: var(--title-text-color);
 }
 
-/* current for all pages*/
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
 
 .site-nav.current {
   color: var(--accent-color);
 }
+/* ===================/Навігація====================== */
 
-/* contact-info for all pages*/
+/* ===================Контактна інформація=========== */
+
 .contact-info a {
   color: var(--primary-text-color);
   /* font-weight: 500;
@@ -78,8 +84,56 @@ body {
   color: var(--accent-color);
 }
 
-/* hero for studio*/
+/* ===================/Контактна інформація=========== */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.button {
+  color: var(--contrasting-color);
+  background-color: var(--accent-color);
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  color: var(--contrasting-color);
+  font-style: normal;
+}
+
+.contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--background-dark);
+}
+
+/* =====================/Загальні стилі=============== */
+
+/* =====================Студія======================== */
+
+/* ====================Герой=========================== */
 .hero {
   background-color: var(--background-dark);
 }
@@ -94,20 +148,8 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* visually-hidden for all pages*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+/* ====================/Герой=========================== */
 
-/* title for all pages*/
 .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -117,7 +159,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* subtitle for studio*/
 .subtitle {
   color: var(--title-text-color);
   font-weight: 700;
@@ -126,7 +167,6 @@ body {
   text-transform: uppercase;
 }
 
-/* caption-team for studio*/
 .caption-team {
   font-weight: 500;
   font-size: 16px;
@@ -135,40 +175,10 @@ body {
   color: var(--title-text-color);
 }
 
-/* text for studio*/
 .text {
   line-height: 1.19;
 }
 
-/* subject for portfolio*/
-.subject {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-}
-
-/* name-project for portfolio*/
-.name-project {
-  font-size: 16px;
-  line-height: 1.88;
-}
-/* button for all*/
-
-.button {
-  color: var(--contrasting-color);
-  background-color: var(--accent-color);
-  border: none;
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
-
-/* button-maine for studio */
 .button.maine {
   font-weight: 700;
   font-size: 16px;
@@ -184,7 +194,23 @@ body {
   background-color: #188ce8;
 }
 
-/* button-secondary for portfolio */
+/*  ======================/Студія============================ */
+
+/* ======================Портфоліо=========================== */
+
+.subject {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.name-project {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
 .button.secondary {
   color: #212121;
   background-color: #f5f4fa;
@@ -196,31 +222,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/* current for all*/
-
 .button.secondary.current {
   background-color: var(--accent-color);
   color: var(--contrasting-color);
-}
-
-/* address for all*/
-.address {
-  color: var(--contrasting-color);
-  font-style: normal;
-}
-
-/* address-nav for all*/
-.contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-}
-
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
-}
-
-/* footer for all*/
-.footer {
-  background-color: var(--background-dark);
 }
